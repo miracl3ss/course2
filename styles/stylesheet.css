@@ -1,0 +1,153 @@
+
+main, header {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+}
+
+main { z-index: 0; }
+header { z-index: 1; }
+.no-pseudo { transform: none !important; animation:  cobler 30s 0s linear infinite alternate !important; }
+
+.back {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline:  auto;
+    margin-top: 20vh;
+    gap: 6vh;
+    width: 30vw;
+    transform: rotateY(-180deg);
+}
+
+main form p {
+    font-size: 1.2em;
+}
+
+#signInEmail, #signInPassword, #signUpEmail, #signUpPassword, #signUpConfirmPassword {
+    width: 26vw;
+    border-radius: 15px;
+    padding: 2vh 1.5vw;
+    font-size: 0.8em;
+    color: #000;
+}
+
+main form button {
+    border-radius: 15px;
+    padding: 1vh 2vw;
+    background: rgba(255, 244, 255, 0.322);
+    background-blend-mode: lighten;
+    backdrop-filter: blur(30px);
+    cursor: pointer;
+}
+
+main form button:hover {
+    box-shadow: -10px 10px 15px rgba(0, 0, 0, 0.065);
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+main form button:not(:hover) {
+    transform: scale(1);
+    transition: 1s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+}
+
+.fade-out{
+    animation: fadeOut ease-out 1s forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.active {
+    animation: fadeIn ease-in 1s;
+    animation-fill-mode: forwards;
+}
+
+#formToSignUp:hover {
+    transform: scale(1.1);
+}
+
+#formToSignUp:not(:hover) {
+    transform: scale(1);
+}
+
+#formToSignUp {
+    position: absolute;
+    text-align: center;
+    top: 80vh;
+    width: 100%;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.705);
+    cursor: pointer;
+    transition: fadeIn 1s, top 1.5s, transform 0.001s;
+}
+
+#film {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transition: 2s;
+}
+
+.container {
+    box-sizing: border-box;
+    width: 100vw;
+    min-height: 100vh;
+    position: absolute;
+}
+
+.container #film {
+    transform: rotateY(-180deg);
+}
+
+.face {
+    align-items: center;
+    backface-visibility: hidden;
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+}
+
+.front {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-inline: auto 0;
+    margin-top: 27vh;
+    gap: 6vh;
+}
+
+.backTitle {
+    top: 85vh !important;
+}
+
+footer {
+    position: absolute;
+    z-index: 2;
+    right: 1vw;
+    bottom: 1vh;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 16px;
+}

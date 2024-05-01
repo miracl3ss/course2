@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main page</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/blobsAnimate.css">
+    <link rel="stylesheet" href="styles/stylesheet.css">
+</head>
+<body>
+    <header id="header">
+        <h1 class="textOnWelcome">do u wanna track your emotions?</h1>
+        <h2 class="textOnWelcome">I will help u</h1>
+        <figure type="submit" id="blob"></figure>
+        <h3 class="textOnWelcome">enter the other world with me</h3>
+    </header>
+    <main id="main">
+        <figure id="card">
+            <section id="film">
+                <form action="auth.php" method="post" class="face front">
+                    <p>login</p>
+                    <input type="email" name="email" id="signInEmail" class="fade-in" placeholder="email">
+                    <input type="password" name="password" id="signInPassword" class="fade-in" placeholder="password">
+                    <button type="submit" class="fade-in">sign in</button>
+                </form>
+                <p id="formToSignUp" class="fade-in">first time</p>
+                <form action="regist.php" method="post" class="face back">
+                    <p>registration</p>
+                    <input type="email" name="email" id="signUpEmail" placeholder="email">
+                    <input type="password" name="password" id="signUpPassword" placeholder="password">
+                    <input type="password" name="confirmPassword" id="signUpConfirmPassword" placeholder="confirm password">
+                    <button type="submit">sign up</button>
+                </form>
+            </section>
+        </figure>
+    </main>
+    <footer>
+        <a href="#">copyrights</a>
+        <a href="#">contacts</a>
+        <a href="#">about us</a>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
