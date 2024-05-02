@@ -12,25 +12,25 @@
     <header id="header">
         <h1 class="textOnWelcome">do u wanna track your emotions?</h1>
         <h2 class="textOnWelcome">I will help u</h1>
-        <figure type="submit" id="blob"></figure>
+        <figure id="blob"></figure>
         <h3 class="textOnWelcome">enter the other world with me</h3>
     </header>
     <main id="main">
         <figure id="card">
             <section id="film">
-                <form action="auth.php" method="post" class="face front">
+                <form id="login-form" class="face front">
                     <p>login</p>
-                    <input type="email" name="email" id="signInEmail" class="fade-in" placeholder="email">
-                    <input type="password" name="password" id="signInPassword" class="fade-in" placeholder="password">
-                    <button type="submit" class="fade-in">sign in</button>
+                    <input type="email" name="email" id="signInEmail" class="fade-in" placeholder="email" required>
+                    <input type="password" name="password" id="signInPassword" class="fade-in" placeholder="password" required> 
+                    <button type="button" id="btn_log" class="fade-in">sign in</button>
                 </form>
                 <p id="formToSignUp" class="fade-in">first time</p>
-                <form action="regist.php" method="post" class="face back">
+                <form class="face back">
                     <p>registration</p>
-                    <input type="email" name="email" id="signUpEmail" placeholder="email">
-                    <input type="password" name="password" id="signUpPassword" placeholder="password">
-                    <input type="password" name="confirmPassword" id="signUpConfirmPassword" placeholder="confirm password">
-                    <button type="submit">sign up</button>
+                    <input type="email" name="email" id="signUpEmail" placeholder="email" required>
+                    <input type="password" name="password" id="signUpPassword" placeholder="password" required>
+                    <input type="password" name="confirmPassword" id="signUpConfirmPassword" placeholder="confirm password" required>
+                    <button type="button" id="btn_reg">sign up</button>
                 </form>
             </section>
         </figure>

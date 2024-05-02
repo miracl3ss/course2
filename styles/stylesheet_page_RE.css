@@ -1,0 +1,86 @@
+h1 {
+    font-size: 64px;
+    color: #fff;
+    font-weight: 600;
+    width: max-content;
+    margin: 20vh auto;
+}
+
+body {
+    background-color: #222;
+    margin: 0 auto;
+}
+
+#recordEmo {
+    margin: 0 auto;
+    width: 865px;
+    display: flex;
+    flex-direction: column;
+    background-color: #5A9355;
+    padding: 2vh 1vw;
+    border-radius: 9px;
+    gap: 16px
+}
+
+.recentlyUsed {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+.recentlyUsed p {
+    font-size: 14px;
+}
+.recentlyUsed ul, li {
+    font-size: 14px;;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    text-decoration: none;
+}
+
+#hate, #joy, #happiness, #anxiety {
+    border-radius: 3px;
+    padding: 0.5vh 1vw;
+}
+#hate {background-color: RGB(0, 0, 0, 75%);}
+#joy {background-color: RGB(255, 245, 10, 75%);}
+#happiness {background-color: RGB(250, 255, 0, 75%);}
+#anxiety {background-color: RGB(94, 7, 7, 75%);}
+
+#input input{
+    padding: 1vh 1vw;
+    width: 650px;
+    outline: none;
+    border-radius: 5px;
+    font-size: 14px;
+    color:#000;
+}
+#input input::placeholder {
+    color: RGB(0, 0, 0, 70%);
+    font-weight: 300;
+    padding: 0 16px;
+}
+#input {
+    display: flex;
+    justify-content: space-between;
+}
+#input button {
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 1vh 2vw;
+    color: #000;
+    outline: none;
+}
+#goTo {
+    margin: 0 60.3vw;
+    width: max-content;
+    font-weight: 200;
+    font-size: 16px;
+    padding: 1.5vh 3vw;
+    background-color: #996DE0;
+    border-radius: 9px;
+    margin-top: 15px;
+}
+

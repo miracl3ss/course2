@@ -4,21 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Let emotion gone</title>
+    <link rel="stylesheet" href="/styles/stylesheet_page_RE.css">
     <link rel="stylesheet" href="/styles/base.css">
 </head>
 <body>
     <main>
         <h1>Lock emotion</h1>
         <section id="recordEmo">
-            <p>recently used:</p>
-            <ul id="recentlyUsed">
-
-            </ul>
+            <article class="recentlyUsed">
+                <p>recently used:</p>
+                <ul>
+                    <li id="hate">hate</li>
+                    <li id="joy">joy</li>
+                    <li id="happiness">happiness</li>
+                    <li id="anxiety">anxiety</li>
+                </ul>
+            </article>
             <section id="input">
                 <input type="text" placeholder="Enter emotion...">
-                <button type="submit">save</button>
+                <button type="button">save</button>
             </section>
         </section>
+        <button id="goTo" onclick="document.location.replace('calendar.html')">go to calendar ></button>
+        
     </main>
 </body>
 </html>
