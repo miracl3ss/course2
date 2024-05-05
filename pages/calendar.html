@@ -4,25 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calendar</title>
+    <link rel="stylesheet" href="/styles/stylesheet_page_cal.css">
     <link rel="stylesheet" href="/styles/base.css">
 </head>
 <body>
     <section class="calendar-container">
-    <header class="calendar-header">
-        <p class="calendar-current-date"></p>
-        <section class="calendar-nav">
-            <span id="calendar-prev"></span>
+        <section class="calendar-header calendar-body">
+            <ul class="calendar-weekdays">
+                <span id="calendar-prev" class="calendar-navigation material-symbols-rounded"><img src="/images/Back.svg" alt="previous"></span>
+                <li>Sun</li>
+                <li>Mon</li>
+                <li>Tue</li>
+                <li>Wed</li>
+                <li>Thu</li>
+                <li>Fri</li>
+                <li>Sat</li>
+                <span id="calendar-next" class="calendar-navigation material-symbols-rounded"><img src="/images/Forward.svg" alt="next"></span>
+            </ul>
+            <ul class="dates">
+                <ul class="calendar-dates"></ul>
+                <ul class="calendar-dates"></ul>
+                <ul class="calendar-dates"></ul>
+                <ul class="calendar-dates"></ul>
+                <ul class="calendar-dates"></ul>
+                <ul class="calendar-dates"></ul>
+                <ul class="calendar-dates"></ul>
+            </ul>
         </section>
-    <section class="calendar-body">
-        <ul class="calendar-weekdays">
-            <ul>1</ul>
-            <ul>2</ul>
-            <ul>3</ul>
-            <ul>4</ul>
-            <ul>5</ul>
-            <ul>6</ul>
-            <ul>7</ul>
-        </ul>
     </section>
+    <a href="/pages/recEmotion.html" id="goTo">go to record</a>
+    <main>
+        <section class="felt">
+            <h1>Most often felt</h1>
+            <article class="oTW">
+                <h2>on this week</h2>
+                <ul class="dates">
+                    <li>hate</li>
+                    <li>joy</li>
+                    <li>happiness</li>
+                    <li>anxiety</li>
+                    <li>emotionless</li>
+                </ul>
+            </article>
+            <article>
+                <h2>on previous week</h2>
+                <ul class="dates">
+                    <li>hate</li>
+                    <li>joy</li>
+                    <li>happiness</li>
+                    <li>anxiety</li>
+                    <li>emotionless</li>
+                </ul>
+            </article>
+        </section>
+        <section class="settings">
+            <h1>Settings</h1>
+            <article class="changePass">
+                <h2>Change Password</h2>
+                
+            </article>
+        </section>
+    </main>
+    <script src="/scripts/calendarScript.js"></script>
 </body>
 </html>
