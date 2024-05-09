@@ -34,19 +34,22 @@ swapCard.addEventListener('click', () => {
     };
 })
 
-let btn_log = document.getElementById("btn_log");
+
 let btn_reg = document.getElementById("btn_reg");
 
 function registerUser(){
 	email = document.getElementById('signUpEmail').value;
     password = document.getElementById('signUpPassword').value;
     confPassword = document.getElementById('signUpConfirmPassword').value;
-    if(password == confPassword) {
+    if(password == confPassword && password.length >= 7) {
         localStorage.setItem('newUserEmail', email);
         localStorage.setItem('newUserPassword', password);
     }
-}//registerUser
+    else if(password != confPassword)   alert(`Passwords don't match`);
+    else if(password.length <= 7)       alert(`Password is shorter than 8 characters`)
+}
 
+let btn_log = document.getElementById("btn_log");
 function loginUser(){
     email = document.getElementById('signInEmail').value;
     password = document.getElementById('signInPassword').value;
@@ -60,9 +63,9 @@ function loginUser(){
         console.log('u did it');
 		document.location.replace('pages/recEmotion.html');
 	}
-    else if(!validUser)     return `email ${email} has not been registered. `;
-	else if(!validPassword) return `Incorrect password for email ${email}`;
-}//loginUser
+    else if(!validUser)     alert(`email ${email} has not been registered. `);
+	else if(!validPassword) alert(`Incorrect password for email ${email}`);
+}
 
 btn_log.addEventListener('click', () => loginUser());
 btn_reg.addEventListener('click', () => registerUser());

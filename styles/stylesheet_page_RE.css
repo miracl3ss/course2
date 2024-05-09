@@ -74,7 +74,8 @@ body {
     outline: none;
 }
 #goTo {
-    margin: 0 60.3vw;
+    position: absolute;
+    left: 60.5vw;
     width: max-content;
     font-weight: 200;
     font-size: 16px;
