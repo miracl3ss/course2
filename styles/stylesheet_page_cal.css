@@ -99,11 +99,11 @@ span:hover {
     list-style: none;
 }
 
-#goTo {
+.subBtn {
     width: fit-content;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 300;
-    padding: 2vh 2vw;
+    padding: 1.5vh 1.5vw;
     background-color: #996DE0;
     border-radius: 10px;
     color: #D2D2D2;
@@ -133,3 +133,28 @@ span:hover {
     padding: 1vh 1vw;
     margin: 0 20px;
 }
+
+.changePass input {
+    margin: 1vh 5vw;
+    border-radius: 10px;
+    max-width: fit-content;
+    padding: 1vh 1vw;
+    font-size: 20px;
+}
+
+#newPassConf { margin: 0; }
+
+#newPass { margin: 1vh 1vw 1vh 5vw; }
+
+.settings h1 {
+    margin: 4vh 0;
+}
+.settings h2 {
+    font-size: 28px;
+    font-weight: 400;
+    margin: 4vh 0 2vh 2vw;
+}
+
+#submitChangePass { margin: 2vh 5vw; }
+
+#delAcc { margin: 0 5vw 5vh; background-color: #e23535; }

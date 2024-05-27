@@ -32,7 +32,7 @@
             </ul>
         </section>
     </section>
-    <a href="recEmotion.html" id="goTo">go to record</a>
+    <a href="recEmotion.html" id="goTo" class="subBtn">go to record</a>
     <main>
         <section class="felt">
             <h1>Most often felt</h1>
@@ -61,7 +61,16 @@
             <h1>Settings</h1>
             <article class="changePass">
                 <h2>Change Password</h2>
-                
+                <input type="password" id="oldPass" placeholder="old password">
+                <form id="confirmed">
+                    <input type="password" id="newPass" placeholder="new password">
+                    <input type="password" id="newPassConf" placeholder="confirm new password">
+                </form>
+                <button id="submitChangePass" class="subBtn">change password</button>
+            </article>
+            <article class="deleteAcc">
+                <h2>Delete Account</h2>
+                <button class="subBtn" id="delAcc">delete</button>
             </article>
         </section>
     </main>
